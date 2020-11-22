@@ -1,0 +1,59 @@
+:root {
+    --user-choice: ;
+    --grid-color:white;
+    --grid-item-background-color: blue;
+    
+}
+
+body {
+  background-color: #66c2ff;
+}
+
+
+h1 {
+    position: fixed;
+    font-family: sans-serif;
+    left : 45%;
+
+ 
+}
+
+.control-button {
+  font-family: sans-serif;
+  background-color: blanchedalmond;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.grid-item {
+  background-color: var(--grid-color);
+  border: 1px solid lightgray;
+  font-size: 30px;
+  text-align: center;
+  /*height: 50px;
+  width: 50px; */
+
+}
+
+.my-color-class {
+    background-color: var(--grid-item-background-color);
+  }
+
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(var(--user-choice), 1fr);
+    grid-template-rows: repeat(var(--user-choice), 1fr);
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    left: 36%;
+    top: 20%;
+    border: solid brown 10px;
+    border-radius: 10px;
+ 
+
+    
+    
+  }
+
